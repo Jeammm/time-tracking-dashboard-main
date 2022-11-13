@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Time tracking dashboard</title>
+
+</head>
+<body>
+  <div class="container">
+    <div class="profile-card">
+      <div class="profile-card-top">
+        <a href="#">Jeremy-picture</a>
+        <div class="profile-name">
+          <h4>Report for</h4>
+          <p>Jeremy Robson</p>
+        </div>
+      </div>
+      <div class="profile-card-bottom">
+        <a href="#">Daily</a>
+        <a href="#">Weekly</a>
+        <a href="#">Monthly</a>
+      </div>
+    </div>
+    <div class="stat-card">
+      <div class="first-three">
+        <div class="card-item">
+          <div class="card-back" id="work"></div>
+          <div class="card-front">
+            <div class="top">
+              <h4>Work</h4>
+              <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg>
+            </div>
+            <div class="bottom">
+              <h5>32hrs</h5>
+              <p>Last Week - 36hrs</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-item">
+          <div class="card-back" id="play"></div>
+          <div class="card-front">
+            <div class="top">
+              <h4>Play</h4>
+              <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg>
+            </div>
+            <div class="bottom">
+              <h5>10hrs</h5>
+              <p>Last Week - 8hrs</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-item">
+          <div class="card-back" id="study"></div>
+          <div class="card-front">
+            <div class="top">
+              <h4>Study</h4>
+              <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg> 
+            </div>
+            <div class="bottom">
+              <h5>4hrs</h5>
+              <p>Last Week - 7hrs</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="last-three">
+        <div class="card-item">
+          <div class="card-back" id="exercise"></div>
+          <div class="card-front">
+            <div class="top">
+              <h4>Exercise</h4>
+              <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg>
+            </div>
+            <div class="bottom">
+              <h5>4hrs</h5>
+              <p>Last Week - 5hrs</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-item">
+          <div class="card-back" id="social"></div>
+          <div class="card-front">
+            <div class="top">
+              <h4>Social</h4>
+              <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg>
+
+            </div>
+            <div class="bottom">
+              <h5>5hrs</h5>
+              <p>Last Week - 10hrs</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-item">
+          <div class="card-back" id="selfcare"></div>
+          <div class="card-front">
+            <div class="top">
+              <h4>Self Care</h4>
+              <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg>
+
+            </div>
+            <div class="bottom">
+              <h5>2hrs</h5>
+              <p>Last Week - 2hrs</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      
+
+    </div>
+  </div>
+</body>
+</html>

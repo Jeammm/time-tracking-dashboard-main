@@ -1,0 +1,295 @@
+*, *:before, *:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 18px;
+    font-family: 'Rubik', sans-serif;
+}
+
+body {
+    background-color: hsl(226, 43%, 10%);
+}
+
+.container {
+    display: flex;
+    padding: 2rem;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+
+.profile-card, .profile-card-top, .profile-card-bottom{
+    width: 350px;
+    height: 120px;
+    border: none;
+    border-radius: 15px;
+}
+
+.profile-card {
+    position: relative;
+    margin-bottom: 4rem;
+}
+
+.profile-card-top {
+    background-color: hsl(246, 80%, 60%);
+    position: absolute;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.4rem;
+}
+
+.profile-card-top a {
+    width:4rem;
+    height:4rem;
+    border: 2px solid white;
+    border-radius: 2rem;
+    background-image: url(/images/image-jeremy.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 4rem;
+    text-indent: -9999999px;
+}
+
+.profile-name {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 0.55rem;
+}
+
+.profile-name h4 {
+    font-weight: 400;
+    font-size: 0.8rem;
+    opacity: 0.7;
+}
+
+.profile-name p {
+    font-weight: 300;
+    font-size: 1.3rem;
+}
+
+
+
+.profile-card-bottom {
+    background-color: hsl(235, 46%, 20%);
+    position: absolute;
+    top: 3rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+.profile-card-bottom a {
+    color: white;
+    margin-bottom: 1rem;
+    font-weight: 400;
+    font-size: 1rem;
+    opacity: 0.7;
+    text-decoration: none;
+}
+
+.profile-card-bottom a:hover {
+    opacity: 0.95;
+    scale: 1.03;
+}
+
+.card-item {
+    width: 350px;
+    height: 110px;
+    border: none;
+    border-radius: 15px;
+    position: relative;
+    margin-bottom: 3rem;
+}
+
+.card-back, .card-front {
+    width: 350px;
+    height: 110px;
+    border: none;
+    border-radius: 15px;
+    position: absolute;
+}
+
+.card-front {
+    background-color: hsl(235, 46%, 20%);
+    z-index: 1;
+    top: 2rem;
+    display: flex;
+    flex-direction: column;
+    padding: 0.4rem;
+    justify-content: center;
+    color: white;
+}
+
+.card-front:hover {
+    scale: 1.01;
+    background-color: hsl(235, 50%, 44%);
+}
+
+.top {
+    display: flex;
+    padding: 0.2rem 1rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top h4 {
+    font-weight: 400;
+    font-size: 1.1rem;
+}
+
+.bottom {
+    display: flex;
+    padding: 0.2rem 1rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bottom h5 {
+    font-weight: 300;
+    font-size: 1.6rem;
+}
+
+.bottom p {
+    opacity: 0.7;
+    font-size: 0.7rem;
+}
+
+.card-back {
+    background-repeat: no-repeat;
+    background-position: right;
+    background-position-x: 90%;
+    background-position-y: -0.8rem;
+}
+
+#work {
+    background-image: url(./images/icon-work.svg);
+    background-color: hsl(15, 100%, 70%);
+}
+
+#play {
+    background-image: url(./images/icon-play.svg);
+    background-color: hsl(195, 74%, 62%);
+}
+
+#study {
+    background-image: url(./images/icon-study.svg);
+    background-color: hsl(348, 100%, 68%);
+}
+
+#exercise {
+    background-image: url(./images/icon-exercise.svg);
+    background-color: hsl(145, 58%, 55%);
+}
+
+#social {
+    background-image: url(./images/icon-social.svg);
+    background-color: hsl(264, 64%, 52%);
+}
+
+#selfcare {
+    background-image: url(./images/icon-self-care.svg);
+    background-color: hsl(43, 84%, 65%);
+}
+
+.top svg:hover {
+    scale: 1.1;
+}
+
+@media (min-width: 773px) {
+
+    body {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* margin: 0 auto; */
+    }
+
+    .container {
+        flex-direction: row;
+        width: 900px;
+        max-height: 100vh;
+        align-items: flex-start;
+        
+    }
+
+    .profile-card {
+        flex-basis : 20%;
+        height: 328px;
+        position: relative;
+    }
+
+    .profile-card-bottom, .profile-card-top {
+        flex-direction: column;
+        height : 230px;
+        width: 100%;
+        position: absolute;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    .profile-card-top {
+        align-items: flex-start;
+        justify-content: flex-start;
+        padding: 1.2rem;
+    }
+
+    .profile-card-top a {
+        width: 3rem;
+        height: 3rem;
+        border-radius: 1.5rem;
+        background-size: 3rem;
+        margin-bottom: 1.4rem;
+    }
+
+    .profile-card-bottom {
+        top: 4.475rem;
+        justify-content: flex-end;
+        gap: 0rem;
+        line-height: 0.25rem;
+        align-items: flex-start;
+        padding-left: 1rem;
+    }
+
+    .profile-card-bottom a {
+        font-size: 0.65rem;
+        opacity: 0.7;
+    }
+
+    .profile-card-bottom a:hover {
+        scale: 1.01;
+    }
+
+    .stat-card {
+        flex-basis: 80%;
+    }
+
+    .first-three, .last-three ,.card-back, .card-front{
+        display: flex;
+        width: 100%;
+        gap: 1rem;
+        margin-left: 0.5rem;
+    }
+
+
+    *.stat-card {
+        width: 30px;
+    }
+
+    
+    .bottom{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .card-front {
+        gap: 0.4rem;
+    }
+}
